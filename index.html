@@ -1,182 +1,105 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            background: linear-gradient(to right, #4caf50, #81c784);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            background: #333;
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            position: sticky;
-            top: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .main-container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-
-        .content {
-            flex: 2;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 20px;
-        }
-
-        .content section {
-            margin-bottom: 20px;
-        }
-
-        .content section h2 {
-            color: #4caf50;
-        }
-
-        .sidebar {
-            flex: 1;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .sidebar h3 {
-            color: #4caf50;
-            margin-bottom: 10px;
-        }
-
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar ul li {
-            margin-bottom: 10px;
-        }
-
-        .sidebar ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        .sidebar ul li a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mi Blog</h1>
-        <p>Explorando Ciencia, Física, Matemáticas y más</p>
-    </header>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#categorias">Categorías</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="main-container">
-        <!-- Contenido principal -->
-        <div class="content">
-            <section id="inicio">
-                <h2>Inicio</h2>
-                <p>Bienvenido a mi blog, un espacio para explorar temas de ciencia, matemáticas y tecnología. Aquí encontrarás artículos interesantes y útiles para aprender y descubrir.</p>
-            </section>
-
-            <section id="categorias">
-                <h2>Categorías</h2>
-                <ul>
-                    <li><a href="#articulo-fisica">Física</a></li>
-                    <li><a href="#articulo-grafos">Matemáticas</a></li>
-                    <li><a href="#articulo-programacion">Programación</a></li>
-                    <li><a href="#articulo-tecnologia">Tecnología</a></li>
-                </ul>
-            </section>
-
-            <section id="articulo-fisica">
-                <h2>Los estados de la materia</h2>
-                <p>Exploramos los estados básicos de la materia: sólido, líquido y gaseoso, y cómo sus propiedades nos ayudan a entender el mundo que nos rodea.</p>
-            </section>
-
-            <section id="articulo-grafos">
-                <h2>Grafo</h2>
-                <p>En matemáticas y ciencias de la computación, un grafo es un conjunto de vértices unidos por aristas. Es una herramienta poderosa para modelar relaciones binarias y resolver problemas complejos.</p>
-            </section>
+    <header class="header">
+        <div class="container">
+            <h1>Mi Blog Personal</h1>
+            <nav class="nav">
+                <a href="#about">Sobre mí</a>
+                <a href="#posts">Publicaciones</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- Barra lateral -->
+    <main class="main-container">
+        <!-- Sección Principal -->
+        <section class="content">
+			<section id="about" class="about">
+				<h2>Sobre mí</h2>
+				<div class="about-container">
+					<img src="images/me.JPG" alt="Mi foto" class="profile-pic">
+					<div class="social-links">
+						<a href="https://instagram.com/tuusuario" target="_blank" class="social-link">
+							<i class="fab fa-instagram"></i> Instagram
+						</a>
+						<a href="https://github.com/tuusuario" target="_blank" class="social-link">
+							<i class="fab fa-github"></i> GitHub
+						</a>
+						<a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-link">
+							<i class="fab fa-linkedin"></i> LinkedIn
+						</a>
+						<a href="mailto:tuemail@example.com" class="social-link">
+							<i class="fas fa-envelope"></i> Correo
+						</a>
+					</div>
+				</div>
+				<p>¡Hola! Bienvenido a mi blog. Aquí comparto pensamientos, historias y recursos sobre diversos temas que me apasionan.</p>
+			</section>
+            <section id="posts" class="posts">
+                <h2>Publicaciones recientes</h2>
+                <article class="post" data-category="matematicas">
+                    <h3>Introducción a las derivadas</h3>
+                    <p>Publicado el <time datetime="2024-11-30">30 de noviembre de 2024</time></p>
+                    <p>Exploramos cómo funcionan las derivadas y su importancia en las matemáticas.</p>
+                    <div class="tags">
+                        <span class="tag matematicas">Matemáticas</span>
+                    </div>
+                </article>
+                <article class="post" data-category="fisica">
+                    <h3>La relatividad especial</h3>
+                    <p>Publicado el <time datetime="2024-11-29">29 de noviembre de 2024</time></p>
+                    <p>Una introducción a la teoría de la relatividad especial de Einstein.</p>
+                    <div class="tags">
+                        <span class="tag fisica">Física</span>
+                    </div>
+                </article>
+                <article class="post" data-category="programacion">
+                    <h3>Introducción a Python</h3>
+                    <p>Publicado el <time datetime="2024-11-28">28 de noviembre de 2024</time></p>
+                    <p>Aprende los conceptos básicos de Python para empezar a programar.</p>
+                    <div class="tags">
+                        <span class="tag programacion">Programación</span>
+                    </div>
+                </article>
+                <article class="post" data-category="cs">
+                    <h3>Estructuras de datos básicas</h3>
+                    <p>Publicado el <time datetime="2024-11-27">27 de noviembre de 2024</time></p>
+                    <p>Descubre las estructuras de datos más comunes como listas, pilas y colas.</p>
+                    <div class="tags">
+                        <span class="tag cs">Ciencias de la Computación</span>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <!-- Barra Lateral -->
         <aside class="sidebar">
-            <!-- Categorías -->
-            <div>
-                <h3>Categorías</h3>
-                <ul>
-                    <li><a href="#articulo-fisica">Física</a></li>
-                    <li><a href="#articulo-grafos">Matemáticas</a></li>
-                    <li><a href="#articulo-programacion">Programación</a></li>
-                    <li><a href="#articulo-tecnologia">Tecnología</a></li>
-                </ul>
-            </div>
-
-            <!-- Enlaces externos -->
-            <div>
-                <h3>Enlaces externos</h3>
-                <ul>
-                    <li><a href="https://es.wikipedia.org/wiki/Grafo" target="_blank">Wikipedia: Grafo</a></li>
-                    <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
-                    <li><a href="https://mathworld.wolfram.com/" target="_blank">MathWorld</a></li>
-                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-                </ul>
-            </div>
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="#" data-filter="matematicas">Matemáticas</a></li>
+                <li><a href="#" data-filter="fisica">Física</a></li>
+                <li><a href="#" data-filter="cs">Ciencias de la Computación</a></li>
+                <li><a href="#" data-filter="programacion">Programación</a></li>
+                <li><a href="#" data-filter="all">Ver todo</a></li>
+            </ul>
         </aside>
-    </div>
-    <footer>
-        &copy; 2024 Mi Blog. Todos los derechos reservados.
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

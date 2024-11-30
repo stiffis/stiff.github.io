@@ -1,0 +1,170 @@
+
+/* Ajustes generales */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --math-color: #e74c3c;
+    --physics-color: #9b59b6;
+    --cs-color: #27ae60;
+    --prog-color: #f1c40f;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.content {
+    flex: 2;
+    margin-right: 1rem;
+}
+
+.sidebar {
+    flex: 0.7;
+    background: var(--light-color);
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    max-height: 300px;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.sidebar a:hover {
+    color: var(--primary-color);
+}
+
+.post {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.post h3 {
+    color: var(--primary-color);
+}
+
+.post .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    padding: 0.3rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.tag.matematicas {
+    background-color: var(--math-color);
+}
+
+.tag.fisica {
+    background-color: var(--physics-color);
+}
+
+.tag.cs {
+    background-color: var(--cs-color);
+}
+
+.tag.programacion {
+    background-color: var(--prog-color);
+}
+
+/* Imagen del perfil */
+.profile-pic {
+    width: 150px; /* Ancho reducido */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 50%; /* Hace la imagen circular */
+    /*display: block; /* Centra la imagen */
+    margin: 1rem auto; /* Espaciado vertical y centrado horizontal */
+    border: 2px solid var(--primary-color); /* Opcional: Borde de color */
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Espacio entre la imagen y los enlaces */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Espacio entre enlaces */
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre icono y texto */
+    transition: color 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+}

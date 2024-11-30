@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(to right, #4caf50, #81c784);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .content section {
+            margin-bottom: 20px;
+        }
+
+        .content section h2 {
+            color: #4caf50;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Blog</h1>
+        <p>Explorando Ciencia, Física, Matemáticas y más</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="main-container">
+        <!-- Contenido principal -->
+        <div class="content">
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <p>Bienvenido a mi blog, un espacio para explorar temas de ciencia, matemáticas y tecnología. Aquí encontrarás artículos interesantes y útiles para aprender y descubrir.</p>
+            </section>
+
+            <section id="categorias">
+                <h2>Categorías</h2>
+                <ul>
+                    <li><a href="#articulo-fisica">Física</a></li>
+                    <li><a href="#articulo-grafos">Matemáticas</a></li>
+                    <li><a href="#articulo-programacion">Programación</a></li>
+                    <li><a href="#articulo-tecnologia">Tecnología</a></li>
+                </ul>
+            </section>
+
+            <section id="articulo-fisica">
+                <h2>Los estados de la materia</h2>
+                <p>Exploramos los estados básicos de la materia: sólido, líquido y gaseoso, y cómo sus propiedades nos ayudan a entender el mundo que nos rodea.</p>
+            </section>
+
+            <section id="articulo-grafos">
+                <h2>Grafo</h2>
+                <p>En matemáticas y ciencias de la computación, un grafo es un conjunto de vértices unidos por aristas. Es una herramienta poderosa para modelar relaciones binarias y resolver problemas complejos.</p>
+            </section>
+        </div>
+
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <!-- Categorías -->
+            <div>
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#articulo-fisica">Física</a></li>
+                    <li><a href="#articulo-grafos">Matemáticas</a></li>
+                    <li><a href="#articulo-programacion">Programación</a></li>
+                    <li><a href="#articulo-tecnologia">Tecnología</a></li>
+                </ul>
+            </div>
+
+            <!-- Enlaces externos -->
+            <div>
+                <h3>Enlaces externos</h3>
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/Grafo" target="_blank">Wikipedia: Grafo</a></li>
+                    <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></li>
+                    <li><a href="https://mathworld.wolfram.com/" target="_blank">MathWorld</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        &copy; 2024 Mi Blog. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

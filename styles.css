@@ -9,7 +9,7 @@
     --physics-color: #9b59b6;
     --cs-color: #27ae60;
     --prog-color: #f1c40f;
-    --font-family: Arial, sans-serif;
+    --font-family: 'Droid Sans', sans-serif;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
     padding: 0.5rem;
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    max-height: 300px;
+    max-height: 250px;
 }
 
 .sidebar h2 {
@@ -72,7 +72,7 @@ body {
 
 .sidebar li {
     margin: 0.5rem 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .sidebar a {
@@ -135,13 +135,14 @@ body {
     height: auto; /* Mantiene la proporción */
     border-radius: 50%; /* Hace la imagen circular */
     /*display: block; /* Centra la imagen */
-    margin: 1rem auto; /* Espaciado vertical y centrado horizontal */
+    margin: 1rem 0; /* Espaciado vertical y centrado horizontal */
     border: 2px solid var(--primary-color); /* Opcional: Borde de color */
 }
 .about-container {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Espacio entre la imagen y los enlaces */
+    gap: 3rem; /* Espacio entre la imagen y los enlaces */
+	justify-content: flex-start;
 }
 
 .social-links {

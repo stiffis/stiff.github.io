@@ -9,6 +9,7 @@
     --physics-color: #9b59b6;
     --cs-color: #27ae60;
     --prog-color: #f1c40f;
+	--art-color: #00aae4;
     --font-family: 'Droid Sans', sans-serif;
 }
 
@@ -129,6 +130,9 @@ body {
     background-color: var(--prog-color);
 }
 
+.tag.arte {
+	background-color: var(--art-color);
+}
 /* Imagen del perfil */
 .profile-pic {
     width: 150px; /* Ancho reducido */

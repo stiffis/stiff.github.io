@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stiff's blog</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stiff's blog</title>
+	<link rel="stylesheet" href="styles.css">
 	<link rel="icon" href="images/favicon.png">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Droid+Sans&display=swap" rel="stylesheet">
 	<style>
-		.rounded-image{
+		.rounded-image {
 			display: block;
 			margin: 10px auto;
 			width: 300px;
 			height: auto;
 			border-radius: 15px;
 		}
-		.image2{
+
+		.image2 {
 			display: block;
 			margin: 10px auto;
 			width: 430;
 			height: auto;
 
 		}
+
 		table {
 			width: 80%;
 			border-collapse: collapse;
 		}
-		th, td {
+
+		th,
+		td {
 			border: 1px solid black;
 			padding: 10px;
 			text-align: center;
 		}
+
 		th {
 			background-color: #f2f2f2;
 		}
 	</style>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Coffee Loop Dereference</h1>
-            <!--<nav class="nav">
+	<header class="header">
+		<div class="container">
+			<h1>Coffee Loop Dereference</h1>
+			<!--<nav class="nav">
                 <a href="#about">Sobre mí</a>
                 <a href="#posts">Publicaciones</a>
             </nav>-->
-        </div>
-    </header>
+		</div>
+	</header>
 
-    <main class="main-container">
-        <!-- Sección Principal -->
-        <section class="content">
+	<main class="main-container">
+		<!-- Sección Principal -->
+		<section class="content">
 			<section id="about" class="about">
 				<h2>Sobre mí</h2>
 				<div class="about-container">
 					<img src="images/me.JPG" alt="Mi foto" class="profile-pic">
 					<div class="social-links">
-						<a href="https://www.instagram.com/stiff.is/?hl=es" target="_blank" class="social-link">
-					
-								<i class="fab fa-instagram"></i> Instagram
+						<a href="https://www.instagram.com/stiff.is/?hl=es" target="_blank"
+							class="social-link">
+
+							<i class="fab fa-instagram"></i> Instagram
 						</a>
-						<a href="https://github.com/stiffis" target="_blank" class="social-link">
+						<a href="https://github.com/stiffis" target="_blank"
+							class="social-link">
 							<i class="fab fa-github"></i> GitHub
 						</a>
-						<a href="https://linkedin.com/in/tuusuario" target="_blank" class="social-link">
+						<a href="https://linkedin.com/in/tuusuario" target="_blank"
+							class="social-link">
 							<i class="fab fa-linkedin"></i> LinkedIn
 						</a>
 						<a href="mailto:steveildefonso90@gmail.com" class="social-link">
@@ -71,76 +81,344 @@
 						</a>
 					</div>
 				</div>
-				<p>Soy Steve Andy Ildefonso Santos, soy estudiante de Ciencias de la Computación en UTEC(Universidad de Ingenieria y Tecnologia)
-					, en este blog estaré publicando parte de los conocimientos aquiridos en clase y temas de mi interés desde Matemáticas, 
-						pasando por CS, hasta Arte. Disfruten de la lectura, estan abiertos a opiniones enviandome un correo colectrónico o un mensaje por Instagram :D.</p>
+				<p>Soy Steve Andy Ildefonso Santos, soy estudiante de Ciencias de la Computación en
+					UTEC(Universidad de Ingenieria y Tecnologia)
+					, en este blog estaré publicando parte de los conocimientos aquiridos en clase y
+					temas de mi interés desde Matemáticas,
+					pasando por CS, hasta Arte. Disfruten de la lectura, estan abiertos a opiniones
+					enviandome un correo colectrónico o un mensaje por Instagram :D.</p>
 			</section>
-            <section id="posts" class="posts">
-                <h2>Publicaciones recientes</h2>
+			<section id="posts" class="posts">
+				<h2>Publicaciones recientes</h2>
+				<article class="post" data-category="arte">
+					<h3>Teorema de la Complejidad Gatuna: Cómo los Gatos ya Dominaron la Ciencia de
+						la Computación (y no nos dimos cuenta)</h3>
+					<p>Publicado el <time datetime="2025-02-19">19 de febrero de 2024</time></p>
+					<p>A lo largo de la historia los gatos han demostrado ser criaturas altamente
+						eficientes, estratégicas y... caóticas. Su
+						comportamiento tiene muchas similitudes con los algoritmos y estructuras
+						de datos que usamos en informática. En este texto altamente científico
+						(<em>al menos eso quiero creer</em>), exploraremos cómo los gatos
+						aplican princípios de <strong>optimización, interrupciones y
+							manipulación del entorno</strong>, con un enfoque en
+						<em>notación Big O, heurísticas y estructuras de
+							datos</em>.
+					</p>
+					<font size="2">(Nota: Ningún gato fue forzado a programar durante la redacción.
+						Que lo hicieran voluntariamente al caminar encima del teclado es otra
+						historia.)</font>
+					<h4>Principio de la Minimización del Costo Energético (Lazy Computing & Greedy
+						Algorithms) </h4>
+					<p>Si hay algo en lo que los gatos son expertos, es en hacer <em>lo mínimo
+							indispensable para sobrevivir</em>. Son los verdaderos creadores
+						de la ley del menor esfuerzo.</p>
+					<p>Ejemplo en gatos: </p>
+					<ul>
+						<li>Si pueden llegar a la cama con <strong>un salto</strong> en vez de
+							dos, siempre elegirán la ruta más corta.</li>
+						<li>Si pueden conseguir comida maullando en vez de cazar, ¿para qué
+							gastar calorías?</li>
+					</ul>
+					<p>Ejemplo en Ciencias de la Computación: </p>
+					<ul>
+						<li><strong>Algoritmos greedy</strong> (glotones) eligen siempre la
+							mejor opción local para optimizar globalmente (<em>Dijkstra,
+								Huffman Coding</em>).</li>
+						<li><strong>Lazy Evaluation</strong> en lenguajes como Haskell o Python
+							solo computa valores cuando es necesario.</li>
+					</ul>
+					<h1>Notación Big O aplicada a gatos:</h1>
+					<table border="1">
+						<tr>
+							<th>Estrategia de movimiento 🐱</th>
+							<th>Complejidad 📈</th>
+						</tr>
+						<tr>
+							<td>Dormir todo el día 😴</td>
+							<td><strong>O(1)</strong> (constante, siempre eficiente)</td>
+						</tr>
+						<tr>
+							<td>Saltar directamente al objetivo. 🏃</td>
+							<td><strong>O(1)</strong> (atajo óptimo)</td>
+						</tr>
+						<tr>
+							<td>Explorar toda la casa en busca de comida. 🍗</td>
+							<td><strong>O(n)</strong> (búsqueda lineal)</td>
+						</tr>
+						<tr>
+							<td>Probar todas las combinaciones posibles. 🔄</td>
+							<td><strong>O(n²) o peor</strong> (brute force)</td>
+						</tr>
+					</table>
+					<p><strong>Conclusión: </strong>¡Los gatos han resuelto el problema de la
+						optimización computacional! Solo calculan lo estrictamente necesario...
+						y luego duermen 18 horas al día. 😴💻</p>
+					<h4>Principio de Exploración Heurística(A* y Simulated Annealing)</h4>
+					<p>Cuando un gato entra a un nuevo lugar, <strong>no sigue un patrón
+							ordenado</strong>, sino que prueba diferentes caminos hasta
+						encontrar el óptimo. También conocido como "perder el tiempo hasta que
+						encuentres el mejor sitio para dormir."
+					</p>
+					<p>Ejemplo en gatos: </p>
+					<ul>
+						<li>Si encuentran una caja nueva, primero meten una pata.</li>
+						<li>Luego meten la cabeza.</li>
+						<li>Luego dan la vuelta y de repente ESTÁN DENTRO.</li>
+					</ul>
+					<p>Ejemplo en Ciencias de la Computación: </p>
+					<ul>
+						<li><strong>A*</strong> <em>pathfinding</em> elige la mejor ruta con
+							base en heurísticas.</li>
+						<li><strong>Simulated Annealing</strong> explora soluciones alternativas
+							antes de elegir la óptima.</li>
+					</ul>
+					<h1>Notación Big O aplicada a gatos:</h1>
+					<table border="1">
+						<tr>
+							<th>Estrategia de movimiento 🐱</th>
+							<th>Complejidad 📈</th>
+						</tr>
+						<tr>
+							<td>Ir directamente a su lugar favorito. 😺</td>
+							<td><strong>O(1)</strong></td>
+						</tr>
+						<tr>
+							<td>Buscar aleatoriamente. 😼</td>
+							<td><strong>O(n)</strong></td>
+						</tr>
+						<tr>
+							<td>Probar todas las habitaciones en orden. 😸</td>
+							<td><strong>O(n log n)</strong></td>
+						</tr>
+						<tr>
+							<td>Probar TODAS las combinaciones posibles. 😾</td>
+							<td><strong>O(n²) o peor</strong></td>
+						</tr>
+					</table>
+					<p><strong>Conclusión: </strong>Los gatos aplican heurísticas más rapido que los
+						humanos buscando sus llaves antes de salir. 🕵️🐈</p>
+					</p>
+					<h4>El Fenomeno de los "interrupts" (Interrupciones no controladas en sistemas
+						operativos)</h4>
+					<p>Todo programador que tenga un gato ha experimentado un <em>interrupt
+							handler</em> inesperado.</p>
+					<p>Ejemplo en gatos: </p>
+					<ul>
+						<li>Se acuestan sobre el teclado mientras editas codigo.</li>
+						<li>Tu gato encuentra que la ventilación de la laptop es un
+							lugar cálido y se acuesta sobre ella, provocando que el sistema
+							se sobrecaliente y se apague.</li>
+						<li>Estás jugando en línea, y el gato decide <strong>apagar el
+								router</strong> en el momento final del combate.
+							(<em>RIP, elo</em>)</li>
+						<li>Justo cuando estás concentrado en el código, el gato <em>decide</em>
+							que es hora de su comida y te interrumpe <strong>con un headbutt
+								en la cara</strong>. (<em>Ese interrupt no se puede
+								deshabiitar.</em>)</li>
+					</ul>
+					<p>Ejemplo en Ciencias de la Computación: </p>
+					<ul>
+						<li><strong>Interrupciones de reloj</strong>: En el sistema operativo se
+							usa un <em>timer</em> para cambiar de proceso y evitar que uno
+							consuma todo el CPU.</li>
+						<li><strong>Overheating</strong> (sobrecalentamiento): Si la CPU se
+							calienta demasiado, el sistema genera una interrupción térmica y
+							se apaga automáticamente para evitar daños.</li>
+					</ul>
+					<p><strong>Conclusión: </strong>Si ves a tu gato acercándose a tu teclado,
+						guarda el trabajo. <strong>NO ES UNA PRUEBA</strong>.</p>
+					<h4>El Acceso Ilegal a Memoria ("Gatos como Hackers")</h4>
+					<p>Los gatos tienen un <strong>instinto natural para el hacking</strong>. No
+						preguntes cómo, pero lo hacen.</p>
+					<p>Ejemplo en gatos: </p>
+					<ul>
+						<li>Encuentran la forma de entrar a una habitación, sin llaves.</li>
+						<li>Se teletransportan a lo alto de un estante aunque la física diga
+							que es imposible.</li>
+						<li>Se meten en cajas que <em>no deberían permitir el acceso a materia
+								sólida</em>.</li>
+					</ul>
+					<p>Ejemplo en Ciencias de la Computación: </p>
+					<ul>
+						<li><strong>Buffer Overflow: </strong>Acceden a memoria fuera de límites
+							(como un gato colándose en una caja donde claramente no cabe).
+						</li>
+						<li><strong>Exploit Discovery: </strong>Siempre encuentran la
+							vulnerabilidad de un sistema (como abrir una puerta que no
+							deberían abrir).</li>
+					</ul>
+					<p><strong>Conclusión: </strong>Los gatos ya son hackers. Nosotros solo estamos
+						en su mundo.</p>
+					<h4>Resumen del "Teorema de la Complejidad Gatuna"</h4>
+					<table>
+						<tr>
+							<th>Comportamiento de los Gatos 🐱</th>
+							<th>Algoritmo 💻</th>
+							<th>Complejidad Big O 📈</th>
+						</tr>
+						<tr>
+							<td>Evitan moverse si no es necesario</td>
+							<td><em>Lazy evaluation, greedy algorithms</em></td>
+							<td><strong>O(1)</strong></td>
+						</tr>
+						<tr>
+							<td>Exploran antes de decidir</td>
+							<td><em>Heurísticas de búsqueda (A*, Simulated Annealing)</em>
+							</td>
+							<td><strong>O(n log n)</strong></td>
+						</tr>
+						<tr>
+							<td>Interrumpen tareas sin previo aviso</td>
+							<td><em>Interrupciones de reloj, Overheating</em></td>
+							<td><strong>O(1) pero caótico 😹</strong></td>
+						</tr>
+						<tr>
+							<td>Acceden a lugares prohibidos</td>
+							<td>Buffer Overflow, hacking</td>
+							<td><strong>O(n)</strong> (exploración lineal)</td>
+						</tr>
+					</table>
+					<p><strong>Moraleja: </strong>Si un gato fuera un programador, escribiría código
+						ultra eficiente... pero luego lo rompería intencionalmente. 😹💻</p>
+					<h4>Reflexión Final</h4>
+					<p>Los gatos han resuelto problemas de optimización, exploración y hacking
+						<strong>sin
+							siquiera intentarlo</strong>.
+						Tal vez la IA avanzada no venga de los humanos... sino de los gatos,
+						quienes nos manipulan para hacer su trabajo mientras ellos duermen
+						plácidamente.
+					</p>
+					<p>Si alguna vez tu gato pisa tu teclado y escribe algo como: </p>
+					<blockquote>
+						<p>while (true) { sleep(1000); }</p>
+					</blockquote>
+					<p>¡NO LO BORRES! Tal vez ha encontrado la respuesta a la vida, el universo y
+						todo lo demás.</p>
+					</p>
+					<div class="tags">
+						<span class="tag arte">Arte</span> <span class="tag cs">Ciencias
+							de la
+							Computación</span>
+					</div>
+				</article>
+
+
 				<article class="post" data-category="cs">
-						<h3> El dilema del prisionero</h3>
+					<h3> El dilema del prisionero</h3>
 					<p>Publicado el <time datetime="2024-12-10">10 de diciembre de 2024</time></p>
-					<p><em>El dilema del prisionero</em> es un problema clásico en la teoría de juegos que ilustra cómo las decisiones individuales, tomadas en busca del interés 
-						propio, pueden llevar a resultados perjudiciales para todas las partes. Este dilema tiene connotaciones psicológicas, filosóficas y tecnológicas, por 
-						lo que exploraremos donde y como interviene cada área. Este dilema fue formulado por Merrill Flood y Melvin Dresher, 2 matemáticos de la RAND Corporation, 
-						organización dedicada al análisis estratégico durante la <em>guerra fría</em> y Albert W. Tucker(Teórico de juegos) le dio la <em>forma narrativa estándar</em> 
+					<p><em>El dilema del prisionero</em> es un problema clásico en la teoría de
+						juegos que ilustra cómo las decisiones individuales, tomadas en busca
+						del interés
+						propio, pueden llevar a resultados perjudiciales para todas las partes.
+						Este dilema tiene connotaciones psicológicas, filosóficas y
+						tecnológicas, por
+						lo que exploraremos donde y como interviene cada área. Este dilema fue
+						formulado por Merrill Flood y Melvin Dresher, 2 matemáticos de la RAND
+						Corporation,
+						organización dedicada al análisis estratégico durante la <em>guerra
+							fría</em> y Albert W. Tucker(Teórico de juegos) le dio la
+						<em>forma narrativa estándar</em>
 						hasta hoy.
 					</p>
 					<h4>Narrativa</h4>
-					<p>Se arresta a dos criminales, prisionero 1 y prisionero 2, en celdas separadas donde no tienen un intercambio de información. Se les da a ambos prisioneros dos 
-					opciones a elegir: <strong>traicionar</strong>(delatar al otro prisionero) o <strong>cooperar</strong>(quedarse callado), y dependiendo de lo que elijan se les dará una sentencia, a
-					continuación la matriz de decisiones:
+					<p>Se arresta a dos criminales, prisionero 1 y prisionero 2, en celdas separadas
+						donde no tienen un intercambio de información. Se les da a ambos
+						prisioneros dos
+						opciones a elegir: <strong>traicionar</strong>(delatar al otro
+						prisionero) o <strong>cooperar</strong>(quedarse callado), y dependiendo
+						de lo que elijan se les dará una sentencia, a
+						continuación la matriz de decisiones:
 					</p>
-					<img src="images/matrix.png" alt="matrix1"  class="image2">
-					<p>Podemos modificar este modelo propuesto por Albert Tuck para facilitar las simulaciones, con números enteros en vez de sentencias añadiendo un determinado numero de iteraciones:</p>
-					<p>Existe un banquero con un cofre de monedas de oro que invita a dos personas a enfrentarse en un juego, de la misma manera no hay comunicación entre ambas personas pero cambiamos ligeramente las decisiones a tomarse, <strong>cooperar</strong> y <strong>no cooperar</strong>, donde el ganador se decide por la mayor cantidad de monedas adquiridas, quedando la matriz de decisiones de la siguiente manera:</p>
+					<img src="images/matrix.png" alt="matrix1" class="image2">
+					<p>Podemos modificar este modelo propuesto por Albert Tuck para facilitar las
+						simulaciones, con números enteros en vez de sentencias añadiendo un
+						determinado numero de iteraciones:</p>
+					<p>Existe un banquero con un cofre de monedas de oro que invita a dos personas a
+						enfrentarse en un juego, de la misma manera no hay comunicación entre
+						ambas personas pero cambiamos ligeramente las decisiones a tomarse,
+						<strong>cooperar</strong> y <strong>no cooperar</strong>, donde el
+						ganador se decide por la mayor cantidad de monedas adquiridas, quedando
+						la matriz de decisiones de la siguiente manera:
+					</p>
 					<img src="images/matrix2.png" alt="matrix2" class="image2">
-					<p>Trivialmente la mejor manera de ganar en la modalidad de una sola iteración, es siempre traicionar, ya que en este modelo, traicionar siempre da mayor o igual ganancia que cooperar, sin importar lo que el otro jugador decida hacer. A una situación donde ambos jugadores se dieran cuenta que traicionar siempre trae un mayor beneficio y ambos lo aplicaran en el juego, se le llama _Equilibrio de Nash_, ya que no hay incentivos externos para cambiar la estrategia.</p>
-					<p>Sin embargo en muchas situaciones cotidianas, no hay una sola iteración, ni tampoco solo dos jugadores, como las relaciones sentimentales, de trabajo, en los negocios ,en la competencia económica, política, incluso ecosistemas naturales donde existen relaciones simbióticas donde muchas especies dependen de la cooperación para su supervivencia. Entonces en esta modalidad, ¿cual sería la mejor estrategia para ganar?</p>
-					<p>Robert Axelrod organizó una competencia mundial en los años 80 para estudiar estrategias en el dilema, donde los participantes programaron algoritmos para jugar múltiples rondas. Su objetivo era investigar 
-						cómo surge y se mantiene la cooperación en un mundo donde los individuos actúan bajo su propio interés. Se recibieron estrategias de una variedad de disciplinas, desde psicología y economía hasta teoría de juegos. Algunas estrategias eran muy simples, mientras que otras eran complejas y basadas en patrones o cálculos probabilísticos.</p>
+					<p>Trivialmente la mejor manera de ganar en la modalidad de una sola iteración,
+						es siempre traicionar, ya que en este modelo, traicionar siempre da
+						mayor o igual ganancia que cooperar, sin importar lo que el otro jugador
+						decida hacer. A una situación donde ambos jugadores se dieran cuenta que
+						traicionar siempre trae un mayor beneficio y ambos lo aplicaran en el
+						juego, se le llama _Equilibrio de Nash_, ya que no hay incentivos
+						externos para cambiar la estrategia.</p>
+					<p>Sin embargo en muchas situaciones cotidianas, no hay una sola iteración, ni
+						tampoco solo dos jugadores, como las relaciones sentimentales, de
+						trabajo, en los negocios ,en la competencia económica, política, incluso
+						ecosistemas naturales donde existen relaciones simbióticas donde muchas
+						especies dependen de la cooperación para su supervivencia. Entonces en
+						esta modalidad, ¿cual sería la mejor estrategia para ganar?</p>
+					<p>Robert Axelrod organizó una competencia mundial en los años 80 para estudiar
+						estrategias en el dilema, donde los participantes programaron algoritmos
+						para jugar múltiples rondas. Su objetivo era investigar
+						cómo surge y se mantiene la cooperación en un mundo donde los individuos
+						actúan bajo su propio interés. Se recibieron estrategias de una variedad
+						de disciplinas, desde psicología y economía hasta teoría de juegos.
+						Algunas estrategias eran muy simples, mientras que otras eran complejas
+						y basadas en patrones o cálculos probabilísticos.</p>
 					<ul>
-						<li>Tit-for-Tat(Ojo por ojo): Comienza cooperando y luego imita la acción previa del oponente.</li>
+						<li>Tit-for-Tat(Ojo por ojo): Comienza cooperando y luego imita la
+							acción previa del oponente.</li>
 						<li>Always Defect: Traiciona en cada ronda.</li>
 						<li>Always Cooperate: Coopera sin importar la acción del oponente.</li>
-						<li>Grudger: Coopera hasta que el oponente traiciona, luego traiciona para siempre.</li>
+						<li>Grudger: Coopera hasta que el oponente traiciona, luego traiciona
+							para siempre.</li>
 						<li>Random: Actúa al azar, sin un patron definido.</li>
-						<li>Forgiving Tit-forTat: Similar a Tit-for-Tat, pero tiene un 20% de probabilidad de perdonar una traición y cooperar en la siguiente ronda.</li>
-						<li>Pavlov: Repite su último movimiento si obtuvo una recompensa alta, cambia si la recompensa fue baja. Comienza cooperando.</li>
-						<li>Cooperate then Defect: Coopera en las rondas pares y traiciona en las rondas impares.</li>
-						<li>Win Stay Lose Shift: Mantiene su último movimiento si la recompensa fue alta (≥3). Cambia de movimiento si la recompensa fue baja.</li>
+						<li>Forgiving Tit-forTat: Similar a Tit-for-Tat, pero tiene un 20% de
+							probabilidad de perdonar una traición y cooperar en la siguiente
+							ronda.</li>
+						<li>Pavlov: Repite su último movimiento si obtuvo una recompensa alta,
+							cambia si la recompensa fue baja. Comienza cooperando.</li>
+						<li>Cooperate then Defect: Coopera en las rondas pares y traiciona en
+							las rondas impares.</li>
+						<li>Win Stay Lose Shift: Mantiene su último movimiento si la recompensa
+							fue alta (≥3). Cambia de movimiento si la recompensa fue baja.
+						</li>
 					</ul>
-					<p>Gracias al aporte computacional se pudo realizar una simulación compuesta por 1000 rondas. Escrito usando Neovim, Python y POO el código de la simulación estarán en mi repositorio por si quieren modificarlo o cerciorarse de la información.</p>
+					<p>Gracias al aporte computacional se pudo realizar una simulación compuesta por
+						1000 rondas. Escrito usando Neovim, Python y POO el código de la
+						simulación estarán en mi repositorio por si quieren modificarlo o
+						cerciorarse de la información.</p>
 					<img src="images/Pasted image 20241210171525.png" alt="matrix2" class="image2">
 					<p>Aparentemente las posiciones quedarían así:</p>
 					<ol>
-							<li>Grudger</li>
-							<li>Tit-for-Tat</li>
-							<li>Always Defect</li>
-							<li>Forgiving Tit-for-Tat</li>
-							<li>Pavlov</li>
-							<li>Win Stay Lose Shift</li>
-							<li>Always Cooperate</li>
-							<li>Cooperate then Defect</li>
-							<li>Random</li>
+						<li>Grudger</li>
+						<li>Tit-for-Tat</li>
+						<li>Always Defect</li>
+						<li>Forgiving Tit-for-Tat</li>
+						<li>Pavlov</li>
+						<li>Win Stay Lose Shift</li>
+						<li>Always Cooperate</li>
+						<li>Cooperate then Defect</li>
+						<li>Random</li>
 					</ol>
-					<p>Y digo aparentemente por la poca cantidad de estrategias puestas en simulación, pero nos puede dar una idea para armar la siguiente tabla, usando también información de The Evolution of Cooperation, articulo escrito por Robert Axelrod y William Hamilton.</p>
+					<p>Y digo aparentemente por la poca cantidad de estrategias puestas en
+						simulación, pero nos puede dar una idea para armar la siguiente tabla,
+						usando también información de The Evolution of Cooperation, articulo
+						escrito por Robert Axelrod y William Hamilton.</p>
 					<table border="1">
 						<tr>
 							<th>Estrategia</th>
-					        <th>Psicología</th>
-					        <th>Filosofía</th>
-					    </tr>
+							<th>Psicología</th>
+							<th>Filosofía</th>
+						</tr>
 						<tr>
-					        <td>Tit-for-Tat</td>
-					        <td>Promueve confianza y reciprocidad.</td>
-					        <td>Refleja un equilibrio entre ética utilitaria y moral kantiana.</td>
-					    </tr>
-					    <tr>
-					        <td>Always Defect</td>
-					        <td>Explora el egoísmo y el riesgo de traición.</td>
-					        <td>Representa el dilema del egoísmo racional Hobbes.</td>
-					    </tr>
+							<td>Tit-for-Tat</td>
+							<td>Promueve confianza y reciprocidad.</td>
+							<td>Refleja un equilibrio entre ética utilitaria y moral
+								kantiana.</td>
+						</tr>
+						<tr>
+							<td>Always Defect</td>
+							<td>Explora el egoísmo y el riesgo de traición.</td>
+							<td>Representa el dilema del egoísmo racional Hobbes.</td>
+						</tr>
 						<tr>
 							<td>Always Cooperate</td>
 							<td>Examina el altruismo y la vulnerabilidad.</td>
@@ -157,54 +435,128 @@
 							<td>Relacionado con el libre albedrío.</td>
 						</tr>
 					</table>
-					<p>Para Axelrod el dilema del prisionero va más allá de ser solo un problema teórico; es una herramienta útil para entender cómo funcionan las dinámicas humanas de cooperación y competencia. En diferentes escenarios y con varias iteraciones, se ha demostrado que el éxito no depende únicamente de ser egoísta o altruista, sino de encontrar un balance flexible y adaptativo entre ambos enfoques.</p>
+					<p>Para Axelrod el dilema del prisionero va más allá de ser solo un problema
+						teórico; es una herramienta útil para entender cómo funcionan las
+						dinámicas humanas de cooperación y competencia. En diferentes escenarios
+						y con varias iteraciones, se ha demostrado que el éxito no depende
+						únicamente de ser egoísta o altruista, sino de encontrar un balance
+						flexible y adaptativo entre ambos enfoques.</p>
 					<p>Las estrategias que tienen más éxito en este dilema nos muestran que:</p>
-					
+
 					<ul>
-						<li><strong>Comenzar cooperando </strong>ayuda a generar confianza y fomenta relaciones donde ambos lados pueden beneficiarse.</li>
-						<li><strong>Responder con reciprocidad </strong>refuerza estas relaciones, premiando las buenas acciones y desmotivando comportamiento desleales.</li>
-						<li><strong>Ser adaptable </strong>es clave para ajustarse a situaciones cambiantes y manejar posibles errores o malentendidos.</li>
-						<li><strong>El perdón</strong>, cuando se aplica de forma reazonable, permite reconstruir relaciones tras un conflicto, miesntras que <strong>la firmeza</strong> es necesaria para evitar que los demás se aprovechen.</li>
+						<li><strong>Comenzar cooperando </strong>ayuda a generar confianza y
+							fomenta relaciones donde ambos lados pueden beneficiarse.</li>
+						<li><strong>Responder con reciprocidad </strong>refuerza estas
+							relaciones, premiando las buenas acciones y desmotivando
+							comportamiento desleales.</li>
+						<li><strong>Ser adaptable </strong>es clave para ajustarse a situaciones
+							cambiantes y manejar posibles errores o malentendidos.</li>
+						<li><strong>El perdón</strong>, cuando se aplica de forma reazonable,
+							permite reconstruir relaciones tras un conflicto, miesntras que
+							<strong>la firmeza</strong> es necesaria para evitar que los
+							demás se aprovechen.
+						</li>
 					</ul>
-					<p>Estas ideas no solo se quedan en teoría, sino que tienen aplicaciones prácticas en la vida cotidiana, desde relaciones personales hasta decisiones en política, economía o ecología. En un mundo donde los intereses individuales muchas veces chocan con los colectivos, este dilema nos recuerda lo valioso que es buscar estrategias que impulsen la cooperación sin perder de vista nuestros propios objetivos.</p>
-					<p>Al final, este problema nos enseña que no existen soluciones únicas o inflexibles. El verdadero éxito está en aprender, adaptarse y evolucionar según el entorno y las decisiones de los demás. Este enfoque no solo da buenos resultados en el largo plazo, sino que también ayuda a construir sistemas más justos y balanceados.</p>
+					<p>Estas ideas no solo se quedan en teoría, sino que tienen aplicaciones
+						prácticas en la vida cotidiana, desde relaciones personales hasta
+						decisiones en política, economía o ecología. En un mundo donde los
+						intereses individuales muchas veces chocan con los colectivos, este
+						dilema nos recuerda lo valioso que es buscar estrategias que impulsen la
+						cooperación sin perder de vista nuestros propios objetivos.</p>
+					<p>Al final, este problema nos enseña que no existen soluciones únicas o
+						inflexibles. El verdadero éxito está en aprender, adaptarse y
+						evolucionar según el entorno y las decisiones de los demás. Este enfoque
+						no solo da buenos resultados en el largo plazo, sino que también ayuda a
+						construir sistemas más justos y balanceados.</p>
+					<div class="tags">
+						<span class="tag programacion">Programación</span>
+					</div>
 				</article>
-                <article class="post" data-category="matematicas">
-                    <h3>La importancia de las matemáticas básicas en la vida y el pensamiento lógico</h3>
-                    <p>Publicado el <time datetime="2024-12-02">2 de diciembre de 2024</time></p>
-                    <h4>Introducción</h4>
-					<p>Las matemáticas básicas son una herramienta esencial tanto en la vida cotidiana como en el desarrollo del pensamiento lógico. Desde las operaciones más simples como sumar y restar hasta la capacidad de resolver problemas complejos, las matemáticas básicas forman la base de habilidades prácticas y cognitivas necesarias para enfrentar los desafíos de la vida moderna.</p>
+				<article class="post" data-category="matematicas">
+					<h3>La importancia de las matemáticas básicas en la vida y el pensamiento lógico
+					</h3>
+					<p>Publicado el <time datetime="2024-12-02">2 de diciembre de 2024</time></p>
+					<h4>Introducción</h4>
+					<p>Las matemáticas básicas son una herramienta esencial tanto en la vida
+						cotidiana como en el desarrollo del pensamiento lógico. Desde las
+						operaciones más simples como sumar y restar hasta la capacidad de
+						resolver problemas complejos, las matemáticas básicas forman la base de
+						habilidades prácticas y cognitivas necesarias para enfrentar los
+						desafíos de la vida moderna.</p>
 					<h4>importancia en la vida</h4>
-					<p>La matemática básica es indispensable en actividades diarias como manejar un presupuesto, planificar un viaje o seguir una receta. Un ejemplo claro es el cálculo de descuentos y el manejo de finanzas personales, que requieren conocimientos básicos de porcentajes y operaciones aritméticas. Según un estudio del Banco Mundial, las personas que poseen habilidades matemáticas básicas tienen un 33% más de probabilidad de tomar decisiones financieras responsables, lo que mejora su calidad de vida.</p>
+					<p>La matemática básica es indispensable en actividades diarias como manejar un
+						presupuesto, planificar un viaje o seguir una receta. Un ejemplo claro
+						es el cálculo de descuentos y el manejo de finanzas personales, que
+						requieren conocimientos básicos de porcentajes y operaciones
+						aritméticas. Según un estudio del Banco Mundial, las personas que poseen
+						habilidades matemáticas básicas tienen un 33% más de probabilidad de
+						tomar decisiones financieras responsables, lo que mejora su calidad de
+						vida.</p>
 					<h4>Contribución al pensamiento lógico</h4>
-					<p>El aprendizaje de matemáticas desarrolla el pensamiento crítico y la capacidad para analizar problemas de manera estructurada. Resolver ecuaciones o identificar patrones fortalece habilidades como la deducción lógica y la resolución de problemas. Estas capacidades son transferibles a otras disciplinas, como la programación, donde el razonamiento lógico es fundamental para escribir y depurar código.</p>
+					<p>El aprendizaje de matemáticas desarrolla el pensamiento crítico y la
+						capacidad para analizar problemas de manera estructurada. Resolver
+						ecuaciones o identificar patrones fortalece habilidades como la
+						deducción lógica y la resolución de problemas. Estas capacidades son
+						transferibles a otras disciplinas, como la programación, donde el
+						razonamiento lógico es fundamental para escribir y depurar código.</p>
 					<h4>Impacto en la educacion y el empleo</h4>
-					<p>En el ámbito educativo, la matemática básica es el pilar de disciplinas avanzadas como la física, la economía y la ingeniería. En el empleo, habilidades matemáticas son valoradas en casi todos los sectores. Por ejemplo, empleos en tecnología, análisis de datos y gestión empresarial exigen la capacidad de trabajar con números y comprender conceptos matemáticos.</p>
+					<p>En el ámbito educativo, la matemática básica es el pilar de disciplinas
+						avanzadas como la física, la economía y la ingeniería. En el empleo,
+						habilidades matemáticas son valoradas en casi todos los sectores. Por
+						ejemplo, empleos en tecnología, análisis de datos y gestión empresarial
+						exigen la capacidad de trabajar con números y comprender conceptos
+						matemáticos.</p>
 					<h4>Curiosidades y datos relevantes:</h4>
 					<h5>1. Mejora en habilidades cognitivas</h5>
-					<p>Estudios en neurociencia indican que practicar matemáticas básicas aumenta la actividad en regiones del cerebro asociadas con la memoria y la atención.</p>
+					<p>Estudios en neurociencia indican que practicar matemáticas básicas aumenta la
+						actividad en regiones del cerebro asociadas con la memoria y la
+						atención.</p>
 					<h5>2. Lenguaje Universal</h5>
-					<p>Las matemáticas son el único lenguaje que se entiende en todas las culturas y civilizaciones, lo que las convierte en un puente para la cooperación global.</p>
+					<p>Las matemáticas son el único lenguaje que se entiende en todas las culturas y
+						civilizaciones, lo que las convierte en un puente para la cooperación
+						global.</p>
 					<h5>3. Prevención de deterioro cognitivo</h5>
-					<p>Resolver problemas matemáticos regularmente puede ayudar a prevenir enfermedades como el Alzheimer.</p>
-                    <div class="tags">
-                        <span class="tag matematicas">Matemáticas</span>
-                    </div>
-                </article>
-                <article class="post" data-category="cs">
-                    <h3>La inspiración de las NNC sobre nuestro cerebro</h3>
-                    <p>Publicado el <time datetime="2024-11-29">29 de noviembre de 2024</time></p>
-					<p>Esta inspiración involucra un cambio en la manera de interpretar o explicar nuestro cerebro, donde están involucrados dos grandes modelos: el cognitivismo y el conexionismo.
-					En primer lugar, el cognitivismo buscó darle una perspectiva simbólica a la mente, planteando teorías de la mente ligadas al concepto de "programa".
-					En segundo lugar, el conexionismo buscó adaptar modelos inspirados en la mente, ofreciendo un paradigma más "liberal" en cuanto a errores de interpretación.</p>
+					<p>Resolver problemas matemáticos regularmente puede ayudar a prevenir
+						enfermedades como el Alzheimer.</p>
+					<div class="tags">
+						<span class="tag matematicas">Matemáticas</span>
+					</div>
+				</article>
+				<article class="post" data-category="cs">
+					<h3>La inspiración de las NNC sobre nuestro cerebro</h3>
+					<p>Publicado el <time datetime="2024-11-29">29 de noviembre de 2024</time></p>
+					<p>Esta inspiración involucra un cambio en la manera de interpretar o explicar
+						nuestro cerebro, donde están involucrados dos grandes modelos: el
+						cognitivismo y el conexionismo.
+						En primer lugar, el cognitivismo buscó darle una perspectiva simbólica a
+						la mente, planteando teorías de la mente ligadas al concepto de
+						"programa".
+						En segundo lugar, el conexionismo buscó adaptar modelos inspirados en la
+						mente, ofreciendo un paradigma más "liberal" en cuanto a errores de
+						interpretación.</p>
 					<h4>Surgimiento del Cognitivismo:</h4>
-					<p>Apareció en los años 50, buscando un modelo de ordenador capaz de hacerle frente a la mente humana, donde se sugerían procesos mentales capaces de manipular símbolos, siguiendo reglas lógicas, similar a un "programa de computadora".
-					Como ejemplo, están un conjunto de reglas explícitas aptas para simular razonamientos, desarrolladas por Alan Newell y Herbert Simon en su modelo General Problem Solver.
-					A pesar del impacto inicial provocado, surgieron problemas difíciles de explicar por modelos cognitivistas, como el reconocimiento de patrones, el procesamiento de datos ambiguos y el no permitir errores de lógica o variaciones inevitables.</p>
+					<p>Apareció en los años 50, buscando un modelo de ordenador capaz de hacerle
+						frente a la mente humana, donde se sugerían procesos mentales capaces de
+						manipular símbolos, siguiendo reglas lógicas, similar a un "programa de
+						computadora".
+						Como ejemplo, están un conjunto de reglas explícitas aptas para simular
+						razonamientos, desarrolladas por Alan Newell y Herbert Simon en su
+						modelo General Problem Solver.
+						A pesar del impacto inicial provocado, surgieron problemas difíciles de
+						explicar por modelos cognitivistas, como el reconocimiento de patrones,
+						el procesamiento de datos ambiguos y el no permitir errores de lógica o
+						variaciones inevitables.</p>
 					<img src="images/images.jpeg" alt="Cognitivismo" class="rounded-image">
 					<h4>Nacimiento del Conexionismo:</h4>
-					<p>Proponiendo modelos inspirados en el cerebro, aparece el conexionismo en los años 80, explicando la mente como una red de neuronas capaces de aprender de datos correctos e incorrectos, adaptándose mediante el ajuste de conexiones.
-					David Rumelhart y James McClelland, en su obra Parallel Distributed Processing, presentaron este cambio total en el modelaje de la mente, contribuyendo así al desarrollo práctico con la retropropagación, un método que permite a las redes neuronales aprender mediante el error.</p>
+					<p>Proponiendo modelos inspirados en el cerebro, aparece el conexionismo en los
+						años 80, explicando la mente como una red de neuronas capaces de
+						aprender de datos correctos e incorrectos, adaptándose mediante el
+						ajuste de conexiones.
+						David Rumelhart y James McClelland, en su obra Parallel Distributed
+						Processing, presentaron este cambio total en el modelaje de la mente,
+						contribuyendo así al desarrollo práctico con la retropropagación, un
+						método que permite a las redes neuronales aprender mediante el error.
+					</p>
 					<img src="images/conex.jpg" alt="Conexionismo" class="rounded-image">
 					<h4>Diferencias Clave</h4>
 					<h5>Cognitivismo</h5>
@@ -214,55 +566,79 @@
 					<p>- Enfoque distribuido y adaptativo.</p>
 					<p>- Reconocimiento de patrones y la percepción.</p>
 					<h4>Sistematicidad de la cognición:</h4>
-					<p>Este es y sigue siendo un debate serio entre el cognitivismo y el conexionismo. Su lugar depende de cómo se interpreta y de las limitaciones que cada modelo tenga para explicarlo. Esto se refiere a la capacidad de la mente para manejar estructuras complejas coherentes y organizadas, similar a pensar que si alguien puede procesar "Juan ama a María", implícitamente también puede procesar "María ama a Juan".</p>
-					<p>Tanto el cognitivismo como el conexionismo abordan este debate a su manera.</p>
-						<p>- Por un lado, el cognitivismo expone que la mente funciona como un procesador de información que emplea reglas claras para operar con símbolos y relaciones. Un ejemplo es si existiese una regla que combinase sujeto, verbo y objeto, esta misma podría aplicarse a distintas configuraciones, similar a como funciona el polimorfismo en programación, donde una función definida puede usarse para distintos propósitos, sobrescribiendo esta al variar los parámetros que necesita.</p>
-						<p>- Por otro lado, en el conexionismo, la sistematicidad de la cognición es la emergencia de la dinámica entre las redes neuronales al capturar regularidades en los datos recibidos o enviados. Por ejemplo, una red neuronal puede aprender a reconocer estructuras gramaticales mediante el entrenamiento en un conjunto suficientemente amplio de ejemplos, haciendo uso del refuerzo por experiencia (prueba y error) y la constante repetición.</p>
+					<p>Este es y sigue siendo un debate serio entre el cognitivismo y el
+						conexionismo. Su lugar depende de cómo se interpreta y de las
+						limitaciones que cada modelo tenga para explicarlo. Esto se refiere a la
+						capacidad de la mente para manejar estructuras complejas coherentes y
+						organizadas, similar a pensar que si alguien puede procesar "Juan ama a
+						María", implícitamente también puede procesar "María ama a Juan".</p>
+					<p>Tanto el cognitivismo como el conexionismo abordan este debate a su manera.
+					</p>
+					<p>- Por un lado, el cognitivismo expone que la mente funciona como un
+						procesador de información que emplea reglas claras para operar con
+						símbolos y relaciones. Un ejemplo es si existiese una regla que
+						combinase sujeto, verbo y objeto, esta misma podría aplicarse a
+						distintas configuraciones, similar a como funciona el polimorfismo en
+						programación, donde una función definida puede usarse para distintos
+						propósitos, sobrescribiendo esta al variar los parámetros que necesita.
+					</p>
+					<p>- Por otro lado, en el conexionismo, la sistematicidad de la cognición es la
+						emergencia de la dinámica entre las redes neuronales al capturar
+						regularidades en los datos recibidos o enviados. Por ejemplo, una red
+						neuronal puede aprender a reconocer estructuras gramaticales mediante el
+						entrenamiento en un conjunto suficientemente amplio de ejemplos,
+						haciendo uso del refuerzo por experiencia (prueba y error) y la
+						constante repetición.</p>
 					<h4>¿Un cambio necesario?</h4>
-					<p>Este cambio entre modelos refleja la necesidad de adaptar y mejorar los modelos existentes.El conexionismo marcó un giro al ser más permisivo y flexible con las variaciones tanto en el funcionamiento como en los datos recibidos, transformando la inteligencia artificial y la forma en que entendemos la mente humana.</p>
-                    <div class="tags">
-                        <span class="tag cs">Ciencias de la Computación</span>
-                    </div>
-                </article>
-                <article class="post" data-category="programacion">
-                    <h3>Introducción a Python</h3>
-                    <p>Publicado el <time datetime="2024-11-28">28 de noviembre de 2024</time></p>
-                    <p>Aprende los conceptos básicos de Python para empezar a programar.</p>
-                    <div class="tags">
-                        <span class="tag programacion">Programación</span>
-                    </div>
-                </article>
-                <article class="post" data-category="cs">
-                    <h3>Estructuras de datos básicas</h3>
-                    <p>Publicado el <time datetime="2024-11-27">27 de noviembre de 2024</time></p>
-                    <p>Descubre las estructuras de datos más comunes como listas, pilas y colas.</p>
-                    <div class="tags">
-                        <span class="tag cs">Ciencias de la Computación</span>
-                    </div>
-                </article>
-            </section>
-        </section>
+					<p>Este cambio entre modelos refleja la necesidad de adaptar y mejorar los
+						modelos existentes.El conexionismo marcó un giro al ser más permisivo y
+						flexible con las variaciones tanto en el funcionamiento como en los
+						datos recibidos, transformando la inteligencia artificial y la forma en
+						que entendemos la mente humana.</p>
+					<div class="tags">
+						<span class="tag cs">Ciencias de la Computación</span>
+					</div>
+				</article>
+				<article class="post" data-category="programacion">
+					<h3>Introducción a Python</h3>
+					<p>Publicado el <time datetime="2024-11-28">28 de noviembre de 2024</time></p>
+					<p>Aprende los conceptos básicos de Python para empezar a programar.</p>
+					<div class="tags">
+						<span class="tag programacion">Programación</span>
+					</div>
+				</article>
+				<article class="post" data-category="cs">
+					<h3>Estructuras de datos básicas</h3>
+					<p>Publicado el <time datetime="2024-11-27">27 de noviembre de 2024</time></p>
+					<p>Descubre las estructuras de datos más comunes como listas, pilas y colas.</p>
+					<div class="tags">
+						<span class="tag cs">Ciencias de la Computación</span>
+					</div>
+				</article>
+			</section>
+		</section>
 
-        <!-- Barra Lateral -->
-        <aside class="sidebar">
-            <h2>Categorías</h2>
-            <ul>
-                <li><a href="#" data-filter="matematicas">Matemáticas</a></li>
-                <li><a href="#" data-filter="fisica">Física</a></li>
-                <li><a href="#" data-filter="cs">Ciencias de la Computación</a></li>
-                <li><a href="#" data-filter="programacion">Programación</a></li>
+		<!-- Barra Lateral -->
+		<aside class="sidebar">
+			<h2>Categorías</h2>
+			<ul>
+				<li><a href="#" data-filter="matematicas">Matemáticas</a></li>
+				<li><a href="#" data-filter="fisica">Física</a></li>
+				<li><a href="#" data-filter="cs">Ciencias de la Computación</a></li>
+				<li><a href="#" data-filter="programacion">Programación</a></li>
 				<li><a href="#" data-filter="arte">Arte</a></li>
-                <li><a href="#" data-filter="all">Ver todo</a></li>
-            </ul>
-        </aside>
-    </main>
+				<li><a href="#" data-filter="all">Ver todo</a></li>
+			</ul>
+		</aside>
+	</main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Coffee Loop Dereference. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2024 Coffee Loop Dereference. Todos los derechos reservados.</p>
+		</div>
+	</footer>
 
-    <script src="scripts.js"></script>
+	<script src="scripts.js"></script>
 </body>
+
 </html>
